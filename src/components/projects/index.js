@@ -1,11 +1,15 @@
 
 import css from './style/projects.module.scss'
-
+import {motion} from 'framer-motion'
 function Projects() {
     return (
-        <div className={css.container} id='projects'>
-            <h1>Projects</h1>
-        </div>
+        <motion.div className={css.container}
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:1}}
+      >
+        <h1>Projects</h1>
+      </motion.div>
     )
 }
 

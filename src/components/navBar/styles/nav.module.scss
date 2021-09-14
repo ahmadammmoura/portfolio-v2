@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 10%;
     height: 100vh;
-    background-color: #457b9d;
+    background-color: #202020;
     justify-content: space-between;
     align-items: center;
-    border-right: #e63946 solid 1px;
+    border-right: #ffd100 solid 1pt;
+    box-shadow: inset -6px -6px 4px #1c1c1c,
+            inset 6px 6px 4px #242424;
     ul{
         width: 100%;
         text-align: center;
@@ -16,14 +19,15 @@ header{
 
             transition: ease-out 300ms;
             a{
+                font-family: 'Abril Fatface', cursive;
                 color: #f1f1f1;
-                transition: ease-out 300ms;
+                transition: ease-out 900ms;
             }
 
             &:hover{
                 
                 a{
-                    color: yellow;
+                    color: #ffd100;
                 }
             }
         }
@@ -43,8 +47,20 @@ header{
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        i{
-            color: #e63946;
+        i:nth-child(1){
+            color: #0077b5;
+            font-size: 1.5rem;
+        }
+        i:nth-child(2){
+            color: #000000;
+            font-size: 1.5rem;
+        }
+        i:nth-child(3){
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
             font-size: 1.5rem;
         }
     }

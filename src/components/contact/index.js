@@ -1,10 +1,15 @@
 import css from './style/contact.module.scss'
+import {motion} from 'framer-motion'
 
 function Contact() {
     return (
-        <div className={css.container} id='contact'>
-            <h1>Contact</h1>
-        </div>
+        <motion.div className={css.container}
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{delay:2,duration:1}}
+      >
+        <h1>Contact</h1>
+      </motion.div>
     )
 }
 
