@@ -1,8 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,400&display=swap');
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.7, 1.3); }
+    50% { transform: scale(1.3, 0.7); }
+    75% { transform: scale(0.99, 1.09); }
+  }
 .container{
     width: 90%;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    .heading{
+        width: 50%;
+        height: 100%;
+        padding-left: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .closeBody{
+            font-family: 'Josefin Sans', sans-serif;
+                color: grey;
+        }
+        .openBody{
+            font-family: 'Josefin Sans', sans-serif;
+                color: grey;
+        }
+        .text{
+            
+            width: 100%;
+            height: 25%;
+            padding: 2rem;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            .openH{
+                font-family: 'Josefin Sans', sans-serif;
+                color: grey;
+                font-size: 1rem;
+            }
+            .closeH{
+                font-family: 'Josefin Sans', sans-serif;
+                color: grey;
+                font-size: 1rem;
+            }
+            h1{
+                margin: 1rem;
+                font-size: 3rem;
+                font-family: 'Josefin Sans', sans-serif;
+    
+    
+                span{
+                    display: inline-block;
+                    color: #ffff;
+                    letter-spacing: 5px;
+                    transition: ease-in-out 400ms;
+                    &:hover{
+                        animation: gelatine 700ms infinite;
+                        color: #ffd100 ;
+                    } 
+                }
+                .coma{
+                    animation: gelatine 900ms infinite;
+                    color: #ffd100 ;
+                }
+    
+            }
+        }
+
+        .para{
+            width: 100%;
+            height: 50%;
+            padding: 2rem;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+
+            .article{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                p{
+                    font-family: 'Josefin Sans', sans-serif;
+                    color: #f1f1f1;
+                    font-size: 26px;
+                    padding-left: 1rem;
+                }
+            }
+
+
+
+
+            .openP{
+                font-family: 'Josefin Sans', sans-serif;
+                color: grey;
+                font-size: 1.1rem;
+            }
+            .closeP{
+                font-family: 'Josefin Sans', sans-serif;
+                color: grey;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .skills{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 

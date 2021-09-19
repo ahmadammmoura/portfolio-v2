@@ -9,7 +9,7 @@ function Skills() {
         animate={{opacity:1}}
         transition={{duration:1}}
       >
-        <h1>Skills</h1>
+        
       </motion.div>
     )
 }

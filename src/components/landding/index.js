@@ -1,6 +1,5 @@
 import React from "react";
 import css from "./style/landding.module.scss";
-import img from "../../assets/img.jpg";
 import { motion } from "framer-motion";
 import ReactCanvasNest from "react-canvas-nest";
 function Landding() {
@@ -11,7 +10,7 @@ function Landding() {
           pointColor: "100, 100, 100 ",
           lineColor: "255, 209,0",
           lineWidth: 1,
-          count: 80,
+          count: 60,
           pointR: 1.5,
         }}
       />
