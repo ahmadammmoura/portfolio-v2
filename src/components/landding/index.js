@@ -27,7 +27,7 @@ function Landding() {
         >
           <span>H</span>
           <span>i</span>
-          <span className={css.coma}>,</span>
+          <span >,</span>
         </motion.h1>
         <motion.h1
           initial={{ y: -300 }}
@@ -47,7 +47,7 @@ function Landding() {
           <span>m</span>
           <span>a</span>
           <span>d</span>
-          <span className={css.coma}>,</span>
+          <span >,</span>
         </motion.h1>
         <motion.h1
           initial={{ y: -500 }}
@@ -71,7 +71,7 @@ function Landding() {
           <span>p</span>
           <span>e</span>
           <span>r</span>
-          <span className={css.coma}>.</span>
+          <span >.</span>
         </motion.h1>
       </div>
       <motion.div className={css.btn}

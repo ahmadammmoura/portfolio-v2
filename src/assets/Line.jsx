@@ -19,7 +19,7 @@ function Line({length,color}) {
         },
         visible: {
           pathLength: length,
-          strokeWidth:2,
+          strokeWidth:1,
           transition: {
             duration: 1.5,
             ease: "easeInOut",
